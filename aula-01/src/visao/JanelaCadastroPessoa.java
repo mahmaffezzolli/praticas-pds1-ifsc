@@ -81,25 +81,20 @@ public class JanelaCadastroPessoa extends JFrame {
 		btnSalvar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				//pega o texto do campo de texto e armazena
-				// nas variaveis para manipula-las
-				
 				String nome = textNome.getText();
 				String cpf = textCPF.getText();
 				
-				if (nome.isEmpty()) {
-					JOptionPane.showMessageDialog(null, "nenhum nome preenchido!");
+				if(nome.isEmpty()||cpf.isEmpty()) {
+					JOptionPane.showMessageDialog(null, "Informacao obrigatoria");
 				}
 				
-				if (cpf.isEmpty()) {
-					JOptionPane.showMessageDialog(null, "nenhum cpf preenchido!");
-				}
+				Funcionario func = new Funcionario();
+				func.setNome(nome);
+				func.setCpf(Long.valueOf(cpf));
 				
-				//Funcionario func = new Funcionario();
-				//func.setNome(nome);
-				//func.setCPF(long.valueOf(cpf));
+				FuncionarioDAO bancoDadosPessoa = FuncionarioDAO.getInstancia();
+				bancoDadosPessoa.inserir(func);
 				
-				//FuncionarioDAO banquinhoDeDados = FuncionarioDAO.get;
 
 			}
 		});

@@ -1,0 +1,56 @@
+﻿Questões conceituais: 
+
+
+
+
+1. Em programação, o que é uma biblioteca?
+
+
+* é o código fonte compilado produzido por terceiros que possibilita adicionar novas funções ao código fonte do software.
+
+
+
+
+
+
+2. O que é a biblioteca Swing do Java e qual é o seu propósito?
+
+
+* é uma biblioteca do java usada para criar interfaces gráficas.
+
+
+
+
+
+
+3. Quais são os componentes de interface gráfica de usuário (GUI) fornecidos pela biblioteca Swing para:
+   1. Botão 
+* Button 
+
+
+   2. Campo de Texto
+* JTextField
+
+
+
+
+   3. Caixa de Seleção
+* JCheckBox
+
+
+
+
+   4. Barra de Progresso
+* JProgressBar
+
+
+
+
+   5. Botão de Opção
+* JOptionPane
+
+
+
+
+   6. Caixa de Combinação
+* JComboBox

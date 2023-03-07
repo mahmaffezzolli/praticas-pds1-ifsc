@@ -11,8 +11,6 @@
 
 
 
-
-
 2. O que é a biblioteca Swing do Java e qual é o seu propósito?
 
 
@@ -21,36 +19,39 @@
 
 
 
-
-
 3. Quais são os componentes de interface gráfica de usuário (GUI) fornecidos pela biblioteca Swing para:
    1. Botão 
 * Button 
-
-
    2. Campo de Texto
 * JTextField
-
-
-
-
    3. Caixa de Seleção
 * JCheckBox
-
-
-
-
    4. Barra de Progresso
 * JProgressBar
-
-
-
-
-   5. Botão de Opção
+  5. Botão de Opção
 * JOptionPane
-
-
-
-
-   6. Caixa de Combinação
+  6. Caixa de Combinação
 * JComboBox
+
+
+4. layout é como os componentes que colocamos no frame se distribuem visualmente nele; layout absolute, flow, box, grid, etc. 
+
+5. int opcao = JOptionPane.showConfirmDialog(null,"mensagem");
+
+6. Swing:  é uma evolução do pacote AWT
+           Esse pacote possui quase todos os componentes que já existiam no pacote AWT,            porém com uma interface gráfica mais evoluida e com maiores efeitos  
+           Os componente começam com a letra "J"
+    AWT:   possui os primeiros componentes gráficos que surgiram no java
+           Possuem uma aparência mais "padrão", são mais quadrados e não possuem muitos            efeitos gráficos.
+           Inclui containers (componentes da interface que agrupam outros componentes) 
+    JavaFX: usar qualquer biblioteca Java em aplicações
+            gráficos de vetor, recursos Web de animação, áudio e vídeo em uma aplicação             rica, interativa e imersiva
+            Para a criação da interface com o usuário, JavaFX introduz uma nova                     linguagem de marcação chamada FXML
+             
+ 
+ 
+ 7. são objetos que ao serem configurados na aplicação, modificam o modo como o usuário irá interagir ou visualizar a interface gráfica da mesma.
+ - O WebLaF é uma biblioteca de componentes e Look & Feel totalmente de código aberto escrita em Java puro para aplicativos Swing de desktop de plataforma cruzada.
+ - VTerminal novo Look-and-Feel (LaF) para Java, que permite uma exibição baseada em grade de caracteres Unicode com cores fore/background personalizadas, tamanhos de fonte e pseudo-shaders.Originalmente projetado para desenvolver jogos Roguelike/lite.
+ - Brilho.
+ - JHrome : Painéis com guias no estilo do Google Chrome para Java.

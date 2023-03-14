@@ -9,13 +9,15 @@ import javax.swing.JTextField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 
 public class Questao05 extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField tri1;
-	private JTextField tri2;
-	private JTextField tri3;
+	private JTextField txtTri1;
+	private JTextField txtTri2;
+	private JTextField txtTri3;
 
 	/**
 	 * Launch the application.
@@ -45,31 +47,47 @@ public class Questao05 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		tri1 = new JTextField();
-		tri1.setBounds(50, 62, 86, 20);
-		contentPane.add(tri1);
-		tri1.setColumns(10);
+		txtTri1 = new JTextField();
+		txtTri1.setBounds(50, 62, 86, 20);
+		contentPane.add(txtTri1);
+		txtTri1.setColumns(10);
 		
-		tri2 = new JTextField();
-		tri2.setBounds(193, 62, 86, 20);
-		contentPane.add(tri2);
-		tri2.setColumns(10);
+		txtTri2 = new JTextField();
+		txtTri2.setBounds(193, 62, 86, 20);
+		contentPane.add(txtTri2);
+		txtTri2.setColumns(10);
 		
-		tri3 = new JTextField();
-		tri3.setBounds(338, 62, 86, 20);
-		contentPane.add(tri3);
-		tri3.setColumns(10);
+		txtTri3 = new JTextField();
+		txtTri3.setBounds(338, 62, 86, 20);
+		contentPane.add(txtTri3);
+		txtTri3.setColumns(10);
 		
-		JButton btnNewButton = new JButton("New button");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnConfirm = new JButton("Confirmar ");
+		btnConfirm.setBounds(169, 156, 89, 23);
+		contentPane.add(btnConfirm);
+		btnConfirm.addActionListener(new ActionListener(){
+			
 			public void actionPerformed(ActionEvent e) {
 				
+				float tri1 = Float.valueOf(txtTri1.getText());
+				float tri2 = Float.valueOf(txtTri2.getText());
+				float tri3 = Float.valueOf(txtTri3.getText());
+				
+		if ((tri1 == tri2) && (tri1 == tri3) && (tri2 == tri3) ){
+			JOptionPane.showMessageDialog(null, "o triangulo é equilatero!");
 			
+		}
+		
+		else if ((tri1 == tri2) || (tri1 == tri3) || (tri2 == tri3) ){
+			JOptionPane.showMessageDialog(null, "o triangulo é isoceles!");
 				
 			}
-		});
-		btnNewButton.setBounds(165, 183, 89, 23);
-		contentPane.add(btnNewButton);
-	}
+		else{
+			JOptionPane.showMessageDialog(null, "o triangulo é escaleno!");
 
+		}
+			}
+		});
+		
+	}
 }

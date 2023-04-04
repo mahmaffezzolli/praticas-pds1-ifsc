@@ -84,7 +84,7 @@ public class Questao01 extends JFrame {
 		JButton btnEx = new JButton("Exibir");
 		btnEx.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				 
 				Double par = Double.valueOf(0);
 				
 				for (int i = 0; i < cadastrar.size(); i++) {

@@ -83,7 +83,7 @@ public class Questao02 extends JFrame {
 		contentPane.add(lblMenor);
 		
 		
-		ArrayList <Double> cadastrar = new ArrayList<>();
+		ArrayList <Double>   = new ArrayList<>();
 	
 		
 		JButton btnCad = new JButton("Cadastrar");
@@ -105,8 +105,8 @@ public class Questao02 extends JFrame {
 		btnExibe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Double menor = Double.valueOf(Double.MAX_VALUE);
-				Double maior = Double.valueOf(Double.MIN_VALUE);
+				Double maior = Double.valueOf(Double.MAX_VALUE);
+				Double menor = Double.valueOf(Double.MIN_VALUE);
 				
 				for (int i = 0; i < cadastrar.size(); i++) {
 					if(cadastrar.get(i) > maior) {
